@@ -1,7 +1,6 @@
 # Dagger2Demo
 ## 添加依赖
 ### app-build.gradle
-'''
     plugins {
         id 'com.android.application'
         id 'org.jetbrains.kotlin.android'
@@ -16,7 +15,6 @@
         annotationProcessor 'com.google.dagger:dagger-android-processor:2.x'
         annotationProcessor 'com.google.dagger:dagger-compiler:2.x'
     }
-'''
 ## 参考链接
 <https://www.jianshu.com/p/d212436fa97d>
 
