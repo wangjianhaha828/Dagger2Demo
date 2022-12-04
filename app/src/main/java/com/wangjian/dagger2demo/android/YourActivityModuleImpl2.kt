@@ -5,10 +5,11 @@ import dagger.Provides
 import javax.inject.Named
 
 @Module
-class YourActivityModuleImpl {
+class YourActivityModuleImpl2 constructor(private val arg1: String = "arg1", private val arg2: String = "arg2") {
+
     @Provides
-    @Named("withoutArg")
+    @Named("withArg")
     fun provideListWithData():MutableList<String>{
-        return mutableListOf("one","two","three")
+        return mutableListOf(arg1,arg2)
     }
 }
